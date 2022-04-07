@@ -113,5 +113,8 @@ header h1 {
   text-align: center;
   font-size: 14px;
 }
+.fonctionnement .container :nth-child(3n) {
+  background-color: #f5edff;
+}
 
 /*# sourceMappingURL=style.css.map */
