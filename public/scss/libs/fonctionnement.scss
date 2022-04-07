@@ -9,6 +9,7 @@
     padding: 0px 25px;
     display: flex;
     flex-direction: column;
+
     div {
       display: flex;
       align-items: center;
@@ -42,6 +43,12 @@
       i {
         color: $primary;
       }
+    }
+  }
+  @media only screen and (min-width: 678px) {
+    .container {
+      display: flex;
+      flex-direction: row;
     }
   }
 }
