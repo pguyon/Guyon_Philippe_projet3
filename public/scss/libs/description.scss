@@ -19,6 +19,7 @@
     &:hover {
       filter: brightness(1.2);
       @include hover_shadow;
+      transition-duration: 0.5s;
     }
   }
 }
