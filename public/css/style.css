@@ -78,7 +78,40 @@ header h1 {
   flex-direction: column;
 }
 .fonctionnement h2 {
-  padding: 20px;
+  padding: 35px 15px;
+  margin: 0;
+}
+.fonctionnement .container {
+  padding: 0px 25px;
+  display: flex;
+  flex-direction: column;
+}
+.fonctionnement .container div {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  padding: 5px 0px;
+  max-width: 628px;
+  box-shadow: 0px 1px 5px #a8a7a7;
+}
+.fonctionnement .container div p::before {
+  content: "X";
+  margin-right: 10px;
+}
+.fonctionnement .container div span {
+  padding: 4px;
+  border-radius: 50%;
+  position: relative;
+  right: 12px;
+  color: white;
+  background: #9356dc;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  font-size: 14px;
 }
 
 /*# sourceMappingURL=style.css.map */
