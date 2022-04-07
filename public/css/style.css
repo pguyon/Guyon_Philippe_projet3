@@ -1,12 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-
-$title-style: "Shrikhand", cursive;
-$text-style: "Roboto", sans-serif;
-$primary: #9356dc;
-$secondary: #ff79da;
-$tertiary: #99e2d0;
-
 body {
   padding: 0;
   margin: 0;
@@ -19,5 +12,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $title-style;
+  font-family: "Shrikhand", cursive;
 }
+
+/*# sourceMappingURL=style.css.map */
