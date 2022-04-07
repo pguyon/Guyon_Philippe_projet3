@@ -97,9 +97,9 @@ header h1 {
   max-width: 628px;
   box-shadow: 0px 1px 5px #a8a7a7;
 }
-.fonctionnement .container div p::before {
-  content: "X";
-  margin-right: 10px;
+.fonctionnement .container div i {
+  margin: 0px 20px 0 10px;
+  color: #7e7e7e;
 }
 .fonctionnement .container div span {
   padding: 4px;
@@ -113,8 +113,11 @@ header h1 {
   text-align: center;
   font-size: 14px;
 }
-.fonctionnement .container :nth-child(3n) {
+.fonctionnement .container :nth-of-type(3) {
   background-color: #f5edff;
+}
+.fonctionnement .container :nth-of-type(3) i {
+  color: #9356dc;
 }
 
 /*# sourceMappingURL=style.css.map */
