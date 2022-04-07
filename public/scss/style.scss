@@ -1,37 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-
-$title-style: "Shrikhand", cursive;
-$text-style: "Roboto", sans-serif;
-$primary: #9356dc;
-$secondary: #ff79da;
-$tertiary: #99e2d0;
-
-body {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: $title-style;
-}
-
-p,
-span {
-  font-family: $text-style;
-}
-
-/* Header */
-
-img {
-  display: block;
-  width: 40%;
-  padding: 15px 0;
-  margin: 0 auto;
-}
+@import "libs/variables.scss";
+@import "libs/mixins.scss";
+@import "libs/body.scss";
+@import "libs/header.scss";
+@import "libs/location.scss";

@@ -20,12 +20,27 @@ span {
   font-family: "Roboto", sans-serif;
 }
 
-/* Header */
-img {
-  display: block;
-  width: 40%;
-  padding: 15px 0;
-  margin: 0 auto;
+header {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  padding: 10px 0;
+}
+header h1 {
+  text-align: center;
+  margin: 0;
+}
+
+.location {
+  height: 40px;
+  display: flex;
+  background-color: #ebebeb;
+  justify-content: center;
+  align-items: center;
+}
+.location i {
+  margin-right: 15px;
+}
+.location span {
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */
