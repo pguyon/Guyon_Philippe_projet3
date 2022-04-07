@@ -17,3 +17,7 @@ p,
 span {
   font-family: $text-style;
 }
+
+h2 {
+  @include h2_style;
+}

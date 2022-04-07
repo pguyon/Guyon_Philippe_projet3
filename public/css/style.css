@@ -20,6 +20,11 @@ span {
   font-family: "Roboto", sans-serif;
 }
 
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
 header {
   border-bottom: 2px solid lightgray;
   box-shadow: 0px 1px 5px #a8a7a7;
@@ -52,8 +57,6 @@ header h1 {
 .description h2 {
   max-width: 200px;
   margin: 0 auto 0 auto;
-  font-size: 20px;
-  font-weight: bold;
 }
 .description button {
   padding: 10px 15px;
@@ -68,6 +71,14 @@ header h1 {
   filter: brightness(1.2);
   box-shadow: 0px 1px 20px #646464;
   transition-duration: 0.5s;
+}
+
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+}
+.fonctionnement h2 {
+  padding: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

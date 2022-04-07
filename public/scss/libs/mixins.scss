@@ -5,3 +5,8 @@
 @mixin hover_shadow {
   box-shadow: 0px 1px 20px #646464;
 }
+
+@mixin h2_style {
+  font-size: $h2-size;
+  font-weight: bold;
+}
