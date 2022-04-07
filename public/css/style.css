@@ -32,7 +32,7 @@ header h1 {
 .location {
   height: 40px;
   display: flex;
-  background-color: #f6f6f6;
+  background-color: #eaeaea;
   justify-content: center;
   align-items: center;
 }
