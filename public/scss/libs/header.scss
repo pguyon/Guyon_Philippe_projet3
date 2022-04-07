@@ -1,4 +1,5 @@
 header {
+  border-bottom: 2px solid lightgray;
   @include shadow;
   padding: 5px 0;
   h1 {

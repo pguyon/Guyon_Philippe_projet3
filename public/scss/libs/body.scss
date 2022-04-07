@@ -4,15 +4,15 @@ body {
   box-sizing: border-box;
 }
 
-h1,
+h1 {
+  font-family: $title-style;
+}
+
 h2,
 h3,
 h4,
 h5,
-h6 {
-  font-family: $title-style;
-}
-
+h6,
 p,
 span {
   font-family: $text-style;
