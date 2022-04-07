@@ -15,4 +15,17 @@ h6 {
   font-family: "Shrikhand", cursive;
 }
 
+p,
+span {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Header */
+img {
+  display: block;
+  width: 40%;
+  padding: 15px 0;
+  margin: 0 auto;
+}
+
 /*# sourceMappingURL=style.css.map */

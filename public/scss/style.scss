@@ -21,3 +21,17 @@ h5,
 h6 {
   font-family: $title-style;
 }
+
+p,
+span {
+  font-family: $text-style;
+}
+
+/* Header */
+
+img {
+  display: block;
+  width: 40%;
+  padding: 15px 0;
+  margin: 0 auto;
+}
