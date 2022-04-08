@@ -25,6 +25,10 @@ h2 {
   font-weight: bold;
 }
 
+a {
+  text-decoration: none;
+}
+
 .loading {
   position: fixed;
   height: 100%;
@@ -183,6 +187,41 @@ header h1 {
   .fonctionnement .container div {
     width: 30%;
   }
+}
+
+.restaurant {
+  padding: 15px;
+  background-color: #f6f6f6;
+  height: 1200px;
+  display: flex;
+  flex-direction: column;
+}
+.restaurant .allcards {
+  display: flex;
+  flex-direction: column;
+}
+.restaurant .allcards .cards {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 250px;
+  background-color: white;
+  border-radius: 15px;
+}
+.restaurant .allcards .cards img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+.restaurant .allcards .cards .description {
+  background-color: white;
+  height: 30%;
+  padding: 0;
+}
+.restaurant .allcards .cards .description h3,
+.restaurant .allcards .cards .description p {
+  margin: 0;
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */

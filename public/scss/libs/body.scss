@@ -21,3 +21,7 @@ span {
 h2 {
   @include h2_style;
 }
+
+a {
+  text-decoration: none;
+}
