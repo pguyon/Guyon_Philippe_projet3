@@ -201,6 +201,7 @@ header h1 {
   flex-direction: column;
 }
 .restaurant .allcards .cards {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 95%;
@@ -220,6 +221,16 @@ header h1 {
   height: 100%;
   object-fit: cover;
 }
+.restaurant .allcards .cards .image span {
+  position: absolute;
+  background-color: #99e2d0;
+  color: #008766;
+  font-size: 14px;
+  border-radius: 5px;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+}
 .restaurant .allcards .cards .description {
   background-color: white;
   height: 30%;
@@ -237,8 +248,10 @@ header h1 {
   float: left;
 }
 .restaurant .allcards .cards .description i {
-  padding: 5px;
   color: black;
+}
+.restaurant .allcards .cards .description i :hover {
+  background-color: linear-gradient(#ff79da, #9356dc);
 }
 
 /*# sourceMappingURL=style.css.map */
