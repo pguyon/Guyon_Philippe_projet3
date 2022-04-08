@@ -39,7 +39,9 @@
         height: 30%;
         padding: 10px;
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        align-items: start;
+
         h3 {
           margin: 0 0 3px 0;
           color: black;
@@ -50,10 +52,19 @@
           float: left;
         }
         i {
-          color: black;
-          :hover {
-            background-color: linear-gradient($secondary, $primary);
-          }
+          position: absolute;
+          right: 20px;
+          bottom: 30px;
+        }
+        .fas {
+          color: transparent;
+          background-image: linear-gradient(red, blue);
+          background-clip: text;
+          -webkit-background-clip: text;
+          opacity: 0;
+        }
+        &:hover .fas {
+          opacity: 1;
         }
       }
     }

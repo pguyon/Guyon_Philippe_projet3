@@ -236,7 +236,8 @@ header h1 {
   height: 30%;
   padding: 10px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: start;
 }
 .restaurant .allcards .cards .description h3 {
   margin: 0 0 3px 0;
@@ -248,10 +249,19 @@ header h1 {
   float: left;
 }
 .restaurant .allcards .cards .description i {
-  color: black;
+  position: absolute;
+  right: 20px;
+  bottom: 30px;
 }
-.restaurant .allcards .cards .description i :hover {
-  background-color: linear-gradient(#ff79da, #9356dc);
+.restaurant .allcards .cards .description .fas {
+  color: transparent;
+  background-image: linear-gradient(red, blue);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+}
+.restaurant .allcards .cards .description:hover .fas {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
