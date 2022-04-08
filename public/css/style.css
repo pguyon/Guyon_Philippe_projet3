@@ -129,6 +129,7 @@ header h1 {
 .fonctionnement {
   display: flex;
   flex-direction: column;
+  margin-bottom: 25px;
 }
 .fonctionnement h2 {
   padding: 35px 15px;
@@ -175,7 +176,7 @@ header h1 {
 @media only screen and (min-width: 678px) {
   .fonctionnement {
     width: 90%;
-    margin: 0px auto;
+    margin: 0px auto 25px auto;
   }
   .fonctionnement .container {
     display: flex;
@@ -262,6 +263,33 @@ header h1 {
 }
 .restaurant .cards .description:hover .fas {
   opacity: 1;
+}
+
+@media only screen and (min-width: 678px) {
+  .restaurant {
+    align-items: center;
+    padding: 15px 60px;
+  }
+  .restaurant h2 {
+    position: relative;
+    right: 43%;
+  }
+  .restaurant .allcards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .restaurant .allcards a {
+    width: 50%;
+  }
+  .restaurant .allcards a .image {
+    width: 100%;
+  }
+  .restaurant .allcards a .image img {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

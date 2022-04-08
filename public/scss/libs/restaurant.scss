@@ -72,3 +72,30 @@
     }
   }
 }
+
+@media only screen and (min-width: 678px) {
+  .restaurant {
+    align-items: center;
+    padding: 15px 60px;
+    h2 {
+      position: relative;
+      right: 43%;
+    }
+    .allcards {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 100%;
+      a {
+        width: 50%;
+        .image {
+          width: 100%;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

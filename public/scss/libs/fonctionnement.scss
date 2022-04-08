@@ -1,6 +1,7 @@
 .fonctionnement {
   display: flex;
   flex-direction: column;
+  margin-bottom: 25px;
   h2 {
     padding: 35px 15px;
     margin: 0;
@@ -47,7 +48,7 @@
   }
   @media only screen and (min-width: 678px) {
     width: 90%;
-    margin: 0px auto;
+    margin: 0px auto 25px auto;
     .container {
       display: flex;
       flex-direction: row;
