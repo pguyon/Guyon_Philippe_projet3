@@ -255,10 +255,11 @@ header h1 {
 }
 .restaurant .allcards .cards .description .fas {
   color: transparent;
-  background-image: linear-gradient(red, blue);
+  background-image: linear-gradient(to right, #9356dc, #ff79da);
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
+  transition: all 300ms;
 }
 .restaurant .allcards .cards .description:hover .fas {
   opacity: 1;
