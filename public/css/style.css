@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 body {
@@ -197,7 +196,7 @@ header h1 {
   display: flex;
   flex-direction: column;
 }
-.restaurant .allcards .cards {
+.restaurant .cards {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -209,16 +208,16 @@ header h1 {
   overflow: hidden;
   box-shadow: 0px 1px 5px #a8a7a7;
 }
-.restaurant .allcards .cards .image {
+.restaurant .cards .image {
   width: 100%;
   height: 70%;
 }
-.restaurant .allcards .cards .image img {
+.restaurant .cards .image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.restaurant .allcards .cards .image span {
+.restaurant .cards .image span {
   position: absolute;
   background-color: #99e2d0;
   color: #008766;
@@ -228,7 +227,7 @@ header h1 {
   right: 10px;
   padding: 10px;
 }
-.restaurant .allcards .cards .description {
+.restaurant .cards .description {
   background-color: white;
   height: 30%;
   padding: 10px;
@@ -236,22 +235,24 @@ header h1 {
   flex-direction: column;
   align-items: start;
 }
-.restaurant .allcards .cards .description h3 {
+.restaurant .cards .description h3 {
   margin: 0 0 3px 0;
   color: black;
 }
-.restaurant .allcards .cards .description p {
+.restaurant .cards .description p {
   margin: 0;
   color: black;
   float: left;
 }
-.restaurant .allcards .cards .description i {
-  /* Je supperpose les 2 icones de manière absolute*/
+.restaurant .cards .description i {
   position: absolute;
   right: 20px;
   bottom: 30px;
 }
-.restaurant .allcards .cards .description .fas {
+.restaurant .cards .description .far {
+  color: black;
+}
+.restaurant .cards .description .fas {
   color: transparent;
   background-image: linear-gradient(to right, #9356dc, #ff79da);
   background-clip: text;
@@ -259,7 +260,7 @@ header h1 {
   opacity: 0;
   transition: all 300ms;
 }
-.restaurant .allcards .cards .description:hover .fas {
+.restaurant .cards .description:hover .fas {
   opacity: 1;
 }
 
