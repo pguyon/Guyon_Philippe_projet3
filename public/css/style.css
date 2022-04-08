@@ -291,5 +291,26 @@ header h1 {
     width: 100%;
   }
 }
+footer {
+  background-color: #353535;
+  padding: 35px;
+}
+footer img {
+  filter: invert(100%);
+  width: 100px;
+}
+footer div {
+  margin-top: 10px;
+}
+footer div .link a {
+  color: white;
+}
+footer div .link a:hover {
+  color: #99e2d0;
+}
+footer div .link i {
+  color: white;
+  margin-right: 10px;
+}
 
 /*# sourceMappingURL=style.css.map */
