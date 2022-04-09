@@ -8,6 +8,7 @@
   transform: scale(0);
   animation: appear 800ms;
   animation-fill-mode: both;
+  cursor: pointer;
   .hide {
     width: 50px;
     background: red;
@@ -22,6 +23,10 @@
   &:not(:hover) > .hide {
     animation: slide_out 400ms;
   }
+}
+
+.delay_one {
+  animation-delay: 300ms;
 }
 
 @keyframes slide_in {
