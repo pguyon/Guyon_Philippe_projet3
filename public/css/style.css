@@ -283,6 +283,55 @@ a {
     width: 100%;
   }
 }
+.container1 {
+  display: flex;
+  justify-content: space-between;
+  width: 225px;
+  height: 50px;
+  border: 1px solid black;
+  overflow: hidden;
+  transform: scale(0);
+  animation: appear 800ms;
+  animation-fill-mode: both;
+}
+.container1 .hide {
+  width: 50px;
+  background: red;
+  height: 100%;
+  margin-right: -50px;
+}
+.container1:hover > .hide {
+  animation: slide_in 400ms;
+  margin-right: 0;
+}
+.container1:not(:hover) > .hide {
+  animation: slide_out 400ms;
+}
+
+@keyframes slide_in {
+  from {
+    margin-right: -50px;
+  }
+  to {
+    margin-right: 0;
+  }
+}
+@keyframes slide_out {
+  from {
+    margin-right: 0;
+  }
+  to {
+    margin-right: -50%;
+  }
+}
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 /* mixins */
 header {
   border-bottom: 2px solid lightgray;
@@ -290,8 +339,8 @@ header {
   padding: 5px 0;
 }
 header i {
-  position: relative;
-  bottom: 5px;
+  position: absolute;
+  top: 10px;
   left: 20px;
   color: #000;
 }
