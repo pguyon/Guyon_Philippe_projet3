@@ -31,21 +31,9 @@
   flex-direction: column;
 }
 
-@mixin index_header {
-  header {
-    border-bottom: 2px solid lightgray;
-    @include shadow;
-    padding: 5px 0;
-    img {
-      width: 150px;
-      position: relative;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-  }
-}
+/* Header*/
 
-@mixin menu_header {
+@mixin header {
   header {
     border-bottom: 2px solid lightgray;
     @include shadow;
@@ -61,6 +49,34 @@
       position: relative;
       left: 50%;
       transform: translateX(-50%);
+    }
+  }
+}
+
+/* footer */
+
+@mixin footer {
+  footer {
+    background-color: #353535;
+    padding: 35px;
+    img {
+      filter: invert(100%);
+      width: 100px;
+    }
+    div {
+      margin-top: 10px;
+      .link {
+        a {
+          color: white;
+          &:hover {
+            color: $tertiary;
+          }
+        }
+        i {
+          color: white;
+          margin-right: 10px;
+        }
+      }
     }
   }
 }
