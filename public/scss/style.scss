@@ -3,10 +3,10 @@
 @import "libs/variables.scss";
 @import "libs/mixins.scss";
 @import "libs/body.scss";
-@import "libs/loading.scss";
-@import "libs/header.scss";
-@import "libs/location.scss";
-@import "libs/description.scss";
-@import "libs/fonctionnement.scss";
-@import "libs/restaurant.scss";
-@import "libs/footer.scss";
+@import "libs/index/loading.scss";
+@import "libs/index/header.scss";
+@import "libs/index/location.scss";
+@import "libs/index/description.scss";
+@import "libs/index/fonctionnement.scss";
+@import "libs/index/restaurant.scss";
+@import "libs/index/footer.scss";
