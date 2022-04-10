@@ -362,6 +362,7 @@ a {
   margin: 0px auto 10px auto;
   cursor: pointer;
   /* slide */
+  /* rotate */
 }
 .menu .food .food_description .text {
   margin: 15px;
@@ -407,6 +408,7 @@ a {
 .menu .food .food_description .hide i {
   margin-top: 17px;
   color: white;
+  transform: rotate(180deg);
 }
 .menu .food .food_description:hover > .hide {
   animation: slide_in 400ms;
@@ -414,6 +416,13 @@ a {
 }
 .menu .food .food_description:not(:hover) > .hide {
   animation: slide_out 400ms;
+}
+.menu .food .food_description:hover > .hide i {
+  animation: rotation_in 400ms;
+  transform: rotate(0deg);
+}
+.menu .food .food_description:not(:hover) > .hide i {
+  animation: rotation_out 400ms;
 }
 .menu .food .delay {
   animation-delay: 800ms;
@@ -424,8 +433,8 @@ a {
 .menu .food .delay_two {
   animation-delay: 1000ms;
 }
-.menu .food button {
-  margin: 50px auto -30px auto;
+.menu button {
+  margin: 50px auto 0px auto;
   max-width: 250px;
   width: 250px;
   padding: 15px 25px;
@@ -436,12 +445,20 @@ a {
   cursor: pointer;
   box-shadow: 0px 1px 5px #a8a7a7;
 }
-.menu .food button:hover {
+.menu button:hover {
   filter: brightness(1.2);
   box-shadow: 0px 1px 20px #646464;
   transition-duration: 0.5s;
 }
 
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 @keyframes slide_in {
   from {
     margin-right: -85px;
@@ -458,12 +475,20 @@ a {
     margin-right: -85px;
   }
 }
-@keyframes appear {
-  0% {
-    transform: scale(0);
+@keyframes rotation_in {
+  from {
+    transform: rotate(180deg);
   }
-  100% {
-    transform: scale(1);
+  to {
+    transform: rotate(0deg);
+  }
+}
+@keyframes rotation_out {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
   }
 }
 /* mixins */

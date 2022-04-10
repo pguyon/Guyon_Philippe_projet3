@@ -104,6 +104,7 @@
         i {
           margin-top: 17px;
           color: white;
+          transform: rotate(180deg);
         }
       }
 
@@ -114,6 +115,16 @@
       }
       &:not(:hover) > .hide {
         animation: slide_out 400ms;
+      }
+
+      /* rotate */
+      &:hover > .hide i {
+        animation: rotation_in 400ms;
+        transform: rotate(0deg);
+      }
+
+      &:not(:hover) > .hide i {
+        animation: rotation_out 400ms;
       }
     }
 
@@ -128,16 +139,17 @@
     .delay_two {
       animation-delay: 1000ms;
     }
-
-    button {
-      margin: 50px auto -30px auto;
-      max-width: 250px;
-      width: 250px;
-      @include button;
-    }
+  }
+  button {
+    margin: 50px auto 0px auto;
+    max-width: 250px;
+    width: 250px;
+    @include button;
   }
 }
 
+@include appear;
 @include slide_in;
 @include slide_out;
-@include appear;
+@include rotation_in;
+@include rotation_out;
