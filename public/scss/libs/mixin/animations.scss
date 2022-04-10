@@ -1,0 +1,32 @@
+@mixin slide_in {
+  @keyframes slide_in {
+    from {
+      margin-right: -85px;
+    }
+    to {
+      margin-right: 0px;
+    }
+  }
+}
+
+@mixin slide_out {
+  @keyframes slide_out {
+    from {
+      margin-right: 0px;
+    }
+    to {
+      margin-right: -85px;
+    }
+  }
+}
+
+@mixin appear {
+  @keyframes appear {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+}

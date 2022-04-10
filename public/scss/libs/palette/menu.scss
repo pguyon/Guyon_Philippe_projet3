@@ -121,32 +121,9 @@
   }
 }
 
-@keyframes slide_in {
-  from {
-    margin-right: -85px;
-  }
-  to {
-    margin-right: 0px;
-  }
-}
-
-@keyframes slide_out {
-  from {
-    margin-right: 0px;
-  }
-  to {
-    margin-right: -85px;
-  }
-}
-
-@keyframes appear {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
+@include slide_in;
+@include slide_out;
+@include appear;
 
 @keyframes rotation_in {
   from {
