@@ -328,30 +328,37 @@ a {
 }
 .menu .entree {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+}
+.menu .entree h2 {
+  text-transform: uppercase;
+}
+.menu .entree .entree_description {
   width: 225px;
   height: 50px;
   border: 1px solid black;
-  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
   transform: scale(0);
+  overflow: hidden;
   animation: appear 800ms;
   animation-fill-mode: both;
   cursor: pointer;
 }
-.menu .entree .hide {
+.menu .entree .entree_description .hide {
   width: 50px;
   background: #99e2d0;
   height: 100%;
   margin-right: -50px;
 }
-.menu .entree:hover > .hide {
+.menu .entree .entree_description:hover > .hide {
   animation: slide_in 400ms;
   margin-right: 0;
 }
-.menu .entree:not(:hover) > .hide {
+.menu .entree .entree_description:not(:hover) > .hide {
   animation: slide_out 400ms;
 }
-.menu .delay_one {
+.menu .entree .delay_one {
   animation-delay: 300ms;
 }
 
