@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 /* Header*/
 /* footer */
+/* menu image */
 body {
   padding: 0;
   margin: 0;
@@ -225,8 +226,7 @@ a {
   height: 30%;
   padding: 10px;
   display: flex;
-  flex-direction: column;
-  align-items: start;
+  align-items: center;
 }
 .restaurant .cards .description h3 {
   margin: 0 0 3px 0;
@@ -237,15 +237,15 @@ a {
   color: black;
   float: left;
 }
-.restaurant .cards .description i {
+.restaurant .cards .description .description_icons i {
   position: absolute;
   right: 20px;
   bottom: 30px;
 }
-.restaurant .cards .description .far {
+.restaurant .cards .description .description_icons .far {
   color: black;
 }
-.restaurant .cards .description .fas {
+.restaurant .cards .description .description_icons .fas {
   color: transparent;
   background-image: linear-gradient(to right, #9356dc, #ff79da);
   background-clip: text;
@@ -253,7 +253,7 @@ a {
   opacity: 0;
   transition: all 300ms;
 }
-.restaurant .cards .description:hover .fas {
+.restaurant .cards .description .description_icons:hover .fas {
   opacity: 1;
 }
 
@@ -283,7 +283,41 @@ a {
     width: 100%;
   }
 }
-.container1 {
+.menu {
+  max-width: 100%;
+  position: relative;
+  background-color: #f6f6f6;
+  border-radius: 25px 25px 0px 0px;
+  top: -60px;
+  padding: 25px;
+}
+.menu .menu_title {
+  display: flex;
+}
+.menu .menu_title h1 {
+  margin: 0;
+  font-size: 32px;
+}
+.menu .menu_title i {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+}
+.menu .menu_title .far {
+  color: black;
+}
+.menu .menu_title .fas {
+  color: transparent;
+  background-image: linear-gradient(to right, #9356dc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 300ms;
+}
+.menu .menu_title:hover .fas {
+  opacity: 1;
+}
+.menu .entree {
   display: flex;
   justify-content: space-between;
   width: 225px;
@@ -295,21 +329,20 @@ a {
   animation-fill-mode: both;
   cursor: pointer;
 }
-.container1 .hide {
+.menu .entree .hide {
   width: 50px;
-  background: red;
+  background: #99e2d0;
   height: 100%;
   margin-right: -50px;
 }
-.container1:hover > .hide {
+.menu .entree:hover > .hide {
   animation: slide_in 400ms;
   margin-right: 0;
 }
-.container1:not(:hover) > .hide {
+.menu .entree:not(:hover) > .hide {
   animation: slide_out 400ms;
 }
-
-.delay_one {
+.menu .delay_one {
   animation-delay: 300ms;
 }
 
@@ -376,6 +409,13 @@ footer div .link a:hover {
 footer div .link i {
   color: white;
   margin-right: 10px;
+}
+
+.menu_img {
+  max-width: 100%;
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=style.css.map */

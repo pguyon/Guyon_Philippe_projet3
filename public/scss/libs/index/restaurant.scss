@@ -38,8 +38,7 @@
       height: 30%;
       padding: 10px;
       display: flex;
-      flex-direction: column;
-      align-items: start;
+      align-items: center;
 
       h3 {
         margin: 0 0 3px 0;
@@ -50,24 +49,14 @@
         color: black;
         float: left;
       }
-      i {
-        position: absolute;
-        right: 20px;
-        bottom: 30px;
-      }
-      .far {
-        color: black;
-      }
-      .fas {
-        color: transparent;
-        background-image: linear-gradient(to right, $primary, $secondary);
-        background-clip: text;
-        -webkit-background-clip: text;
-        opacity: 0;
-        transition: all 300ms;
-      }
-      &:hover .fas {
-        opacity: 1;
+
+      .description_icons {
+        i {
+          position: absolute;
+          right: 20px;
+          bottom: 30px;
+        }
+        @include fa;
       }
     }
   }

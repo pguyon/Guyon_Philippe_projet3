@@ -1,0 +1,80 @@
+.menu {
+  max-width: 100%;
+
+  position: relative;
+  background-color: $box-background;
+  border-radius: 25px 25px 0px 0px;
+  top: -60px;
+  padding: 25px;
+  .menu_title {
+    display: flex;
+    h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+    i {
+      position: absolute;
+      top: 10px;
+      right: 25px;
+    }
+    @include fa;
+  }
+
+  .entree {
+    display: flex;
+    justify-content: space-between;
+    width: 225px;
+    height: 50px;
+    border: 1px solid black;
+    overflow: hidden;
+    transform: scale(0);
+    animation: appear 800ms;
+    animation-fill-mode: both;
+    cursor: pointer;
+    .hide {
+      width: 50px;
+      background: $tertiary;
+      height: 100%;
+      margin-right: -50px;
+    }
+
+    &:hover > .hide {
+      animation: slide_in 400ms;
+      margin-right: 0;
+    }
+    &:not(:hover) > .hide {
+      animation: slide_out 400ms;
+    }
+  }
+
+  .delay_one {
+    animation-delay: 300ms;
+  }
+}
+
+@keyframes slide_in {
+  from {
+    margin-right: -50px;
+  }
+  to {
+    margin-right: 0;
+  }
+}
+
+@keyframes slide_out {
+  from {
+    margin-right: 0;
+  }
+  to {
+    margin-right: -50%;
+  }
+}
+
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

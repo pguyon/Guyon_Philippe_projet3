@@ -8,9 +8,10 @@
 @import "libs/index/description.scss";
 @import "libs/index/fonctionnement.scss";
 @import "libs/index/restaurant.scss";
-@import "libs/palette/menu_header.scss";
+@import "libs/palette/menu.scss";
 
 /* mixins */
 
 @include header;
 @include footer;
+@include menu_img;
