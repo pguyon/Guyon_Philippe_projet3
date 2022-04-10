@@ -142,6 +142,9 @@
       .delay_two {
         animation-delay: 1000ms;
       }
+      .delay_three {
+        animation-delay: 1100ms;
+      }
     }
   }
 
@@ -163,6 +166,10 @@
       align-items: center;
       .food {
         width: 30%;
+      }
+      #first_enchante {
+        position: relative;
+        top: 40px;
       }
     }
   }

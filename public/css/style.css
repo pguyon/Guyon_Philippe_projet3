@@ -437,6 +437,9 @@ a {
 .menu .all_food .food .delay_two {
   animation-delay: 1000ms;
 }
+.menu .all_food .food .delay_three {
+  animation-delay: 1100ms;
+}
 .menu button {
   display: flex;
   justify-content: center;
@@ -465,6 +468,10 @@ a {
   }
   .menu .all_food .food {
     width: 30%;
+  }
+  .menu .all_food #first_enchante {
+    position: relative;
+    top: 40px;
   }
 }
 @keyframes appear {
