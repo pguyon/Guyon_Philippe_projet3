@@ -57,7 +57,7 @@
       align-items: center;
       transform: scale(0);
       overflow: hidden;
-      animation: appear 800ms;
+      animation: appear 700ms;
       animation-fill-mode: both;
       margin: 0px auto 10px auto;
       cursor: pointer;
@@ -65,26 +65,23 @@
       .text {
         margin: 15px;
         width: 75%;
+        @include dots;
 
         h3 {
           margin: 0;
           font-size: 18px;
-          text-overflow: ellipsis;
-          overflow: hidden;
-          white-space: nowrap;
+          @include dots;
         }
         p {
           margin: 0;
           font-size: 14px;
-          text-overflow: ellipsis;
-          overflow: hidden;
-          white-space: nowrap;
+          @include dots;
         }
       }
 
       .price {
         height: 100%;
-        margin-right: 5px;
+        margin-right: 10px;
         p {
           font-size: 14px;
           margin-top: 34px;
@@ -97,12 +94,14 @@
         background: $tertiary;
         height: 100%;
         margin-right: -85px;
-        animation-fill-mode: both;
+        .hide_icon {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
         i {
           margin-top: 17px;
-          margin-left: 24px;
           color: white;
-          transform: rotate(90deg);
         }
       }
 
@@ -113,15 +112,6 @@
       }
       &:not(:hover) > .hide {
         animation: slide_out 400ms;
-      }
-
-      /* rotate */
-      &:hover > .hide i {
-        animation: rotation_in 300ms;
-      }
-
-      &:not(:hover) > .hide i {
-        animation: rotation_out 300ms;
       }
     }
 

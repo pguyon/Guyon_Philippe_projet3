@@ -355,16 +355,18 @@ a {
   align-items: center;
   transform: scale(0);
   overflow: hidden;
-  animation: appear 800ms;
+  animation: appear 700ms;
   animation-fill-mode: both;
   margin: 0px auto 10px auto;
   cursor: pointer;
   /* slide */
-  /* rotate */
 }
 .menu .entree .entree_description .text {
   margin: 15px;
   width: 75%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .menu .entree .entree_description .text h3 {
   margin: 0;
@@ -382,7 +384,7 @@ a {
 }
 .menu .entree .entree_description .price {
   height: 100%;
-  margin-right: 5px;
+  margin-right: 10px;
 }
 .menu .entree .entree_description .price p {
   font-size: 14px;
@@ -394,13 +396,15 @@ a {
   background: #99e2d0;
   height: 100%;
   margin-right: -85px;
-  animation-fill-mode: both;
+}
+.menu .entree .entree_description .hide .hide_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .menu .entree .entree_description .hide i {
   margin-top: 17px;
-  margin-left: 24px;
   color: white;
-  transform: rotate(90deg);
 }
 .menu .entree .entree_description:hover > .hide {
   animation: slide_in 400ms;
@@ -408,12 +412,6 @@ a {
 }
 .menu .entree .entree_description:not(:hover) > .hide {
   animation: slide_out 400ms;
-}
-.menu .entree .entree_description:hover > .hide i {
-  animation: rotation_in 300ms;
-}
-.menu .entree .entree_description:not(:hover) > .hide i {
-  animation: rotation_out 300ms;
 }
 .menu .entree .delay_one {
   animation-delay: 300ms;
