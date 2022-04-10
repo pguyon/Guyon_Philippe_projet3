@@ -359,6 +359,8 @@ a {
   animation-fill-mode: both;
   margin: 0px auto 10px auto;
   cursor: pointer;
+  /* slide */
+  /* rotate */
 }
 .menu .entree .entree_description .text {
   margin: 15px;
@@ -392,6 +394,13 @@ a {
   background: #99e2d0;
   height: 100%;
   margin-right: -85px;
+  animation-fill-mode: both;
+}
+.menu .entree .entree_description .hide i {
+  margin-top: 17px;
+  margin-left: 24px;
+  color: white;
+  transform: rotate(90deg);
 }
 .menu .entree .entree_description:hover > .hide {
   animation: slide_in 400ms;
@@ -399,6 +408,12 @@ a {
 }
 .menu .entree .entree_description:not(:hover) > .hide {
   animation: slide_out 400ms;
+}
+.menu .entree .entree_description:hover > .hide i {
+  animation: rotation_in 300ms;
+}
+.menu .entree .entree_description:not(:hover) > .hide i {
+  animation: rotation_out 300ms;
 }
 .menu .entree .delay_one {
   animation-delay: 300ms;
@@ -426,6 +441,22 @@ a {
   }
   100% {
     transform: scale(1);
+  }
+}
+@keyframes rotation_in {
+  from {
+    transform: rotate(90deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+@keyframes rotation_out {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(90deg);
   }
 }
 /* mixins */

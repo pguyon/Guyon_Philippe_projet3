@@ -97,14 +97,31 @@
         background: $tertiary;
         height: 100%;
         margin-right: -85px;
+        animation-fill-mode: both;
+        i {
+          margin-top: 17px;
+          margin-left: 24px;
+          color: white;
+          transform: rotate(90deg);
+        }
       }
 
+      /* slide */
       &:hover > .hide {
         animation: slide_in 400ms;
         margin-right: 0;
       }
       &:not(:hover) > .hide {
         animation: slide_out 400ms;
+      }
+
+      /* rotate */
+      &:hover > .hide i {
+        animation: rotation_in 300ms;
+      }
+
+      &:not(:hover) > .hide i {
+        animation: rotation_out 300ms;
       }
     }
 
@@ -138,5 +155,23 @@
   }
   100% {
     transform: scale(1);
+  }
+}
+
+@keyframes rotation_in {
+  from {
+    transform: rotate(90deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes rotation_out {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(90deg);
   }
 }
