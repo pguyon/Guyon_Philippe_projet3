@@ -141,7 +141,9 @@
     }
   }
   button {
-    margin: 50px auto 0px auto;
+    display: flex;
+    justify-content: center;
+    margin: 65px auto 0px auto;
     max-width: 250px;
     width: 250px;
     @include button;
