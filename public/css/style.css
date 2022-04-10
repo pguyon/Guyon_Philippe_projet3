@@ -306,6 +306,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .menu .menu_description .menu_icons i {
   position: absolute;
@@ -331,7 +332,14 @@ a {
   flex-direction: column;
 }
 .menu .entree h2 {
+  width: 100px;
   text-transform: uppercase;
+  margin: 15px 0px 0px 0px;
+}
+.menu .entree .border {
+  width: 50px;
+  border: 2px solid #99e2d0;
+  margin-bottom: 20px;
 }
 .menu .entree .entree_description {
   width: 225px;

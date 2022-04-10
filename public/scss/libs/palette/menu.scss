@@ -20,6 +20,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      cursor: pointer;
       i {
         position: absolute;
         right: 25px;
@@ -33,7 +34,14 @@
     display: flex;
     flex-direction: column;
     h2 {
+      width: 100px;
       text-transform: uppercase;
+      margin: 15px 0px 0px 0px;
+    }
+    .border {
+      width: 50px;
+      border: 2px solid $tertiary;
+      margin-bottom: 20px;
     }
     .entree_description {
       width: 225px;
