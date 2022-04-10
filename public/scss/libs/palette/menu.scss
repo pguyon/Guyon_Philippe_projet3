@@ -124,21 +124,3 @@
 @include slide_in;
 @include slide_out;
 @include appear;
-
-@keyframes rotation_in {
-  from {
-    transform: rotate(90deg);
-  }
-  to {
-    transform: rotate(0deg);
-  }
-}
-
-@keyframes rotation_out {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(90deg);
-  }
-}

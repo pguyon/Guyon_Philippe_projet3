@@ -441,22 +441,6 @@ a {
     transform: scale(1);
   }
 }
-@keyframes rotation_in {
-  from {
-    transform: rotate(90deg);
-  }
-  to {
-    transform: rotate(0deg);
-  }
-}
-@keyframes rotation_out {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(90deg);
-  }
-}
 /* mixins */
 header {
   border-bottom: 2px solid lightgray;

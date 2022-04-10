@@ -30,3 +30,25 @@
     }
   }
 }
+
+@mixin rotation_in {
+  @keyframes rotation_in {
+    from {
+      transform: rotate(90deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+}
+
+@mixin rotation_out {
+  @keyframes rotation_out {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(90deg);
+    }
+  }
+}
