@@ -1,23 +1,32 @@
 .menu {
   max-width: 100%;
-
   position: relative;
   background-color: $box-background;
   border-radius: 25px 25px 0px 0px;
   top: -60px;
   padding: 25px;
-  .menu_title {
+
+  .menu_description {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     h1 {
       margin: 0;
-      font-size: 32px;
+      font-size: 28px;
     }
-    i {
-      position: absolute;
-      top: 10px;
-      right: 25px;
+    .menu_icons {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      i {
+        position: absolute;
+        right: 25px;
+        top: 30px;
+      }
+      @include fa;
     }
-    @include fa;
   }
 
   .entree {
