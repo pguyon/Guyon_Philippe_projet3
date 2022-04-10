@@ -33,6 +33,8 @@
   .entree {
     display: flex;
     flex-direction: column;
+    max-width: 100%;
+    width: 100%;
     h2 {
       width: 100px;
       text-transform: uppercase;
@@ -44,22 +46,57 @@
       margin-bottom: 20px;
     }
     .entree_description {
-      width: 225px;
-      height: 50px;
-      border: 1px solid black;
+      max-width: 100%;
+      width: 100%;
+      height: 65px;
+      background-color: white;
+      border-radius: 15px;
+      @include shadow;
       display: flex;
       justify-content: space-between;
+      align-items: center;
       transform: scale(0);
       overflow: hidden;
       animation: appear 800ms;
       animation-fill-mode: both;
+      margin: 0px auto 10px auto;
       cursor: pointer;
 
+      .text {
+        margin: 15px;
+        width: 75%;
+
+        h3 {
+          margin: 0;
+          font-size: 18px;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+        }
+        p {
+          margin: 0;
+          font-size: 14px;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+        }
+      }
+
+      .price {
+        height: 100%;
+        margin-right: 5px;
+        p {
+          font-size: 14px;
+          margin-top: 34px;
+          font-weight: bold;
+        }
+      }
+
       .hide {
-        width: 50px;
+        width: 85px;
         background: $tertiary;
         height: 100%;
-        margin-right: -50px;
+        margin-right: -85px;
       }
 
       &:hover > .hide {
@@ -79,19 +116,19 @@
 
 @keyframes slide_in {
   from {
-    margin-right: -50px;
+    margin-right: -85px;
   }
   to {
-    margin-right: 0;
+    margin-right: 0px;
   }
 }
 
 @keyframes slide_out {
   from {
-    margin-right: 0;
+    margin-right: 0px;
   }
   to {
-    margin-right: -50%;
+    margin-right: -85px;
   }
 }
 
