@@ -115,8 +115,16 @@
       }
     }
 
+    .delay {
+      animation-delay: 800ms;
+    }
+
     .delay_one {
-      animation-delay: 300ms;
+      animation-delay: 900ms;
+    }
+
+    .delay_two {
+      animation-delay: 1000ms;
     }
   }
 }
