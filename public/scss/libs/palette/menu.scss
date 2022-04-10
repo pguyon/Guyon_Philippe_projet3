@@ -30,11 +30,12 @@
     }
   }
 
-  .entree {
+  .food {
     display: flex;
     flex-direction: column;
     max-width: 100%;
     width: 100%;
+    margin-bottom: 10px;
     h2 {
       width: 100px;
       text-transform: uppercase;
@@ -45,7 +46,8 @@
       border: 2px solid $tertiary;
       margin-bottom: 20px;
     }
-    .entree_description {
+
+    .food_description {
       max-width: 100%;
       width: 100%;
       height: 65px;
@@ -125,6 +127,13 @@
 
     .delay_two {
       animation-delay: 1000ms;
+    }
+
+    button {
+      margin: 25px auto 0px auto;
+      max-width: 250px;
+      width: 250px;
+      @include button;
     }
   }
 }

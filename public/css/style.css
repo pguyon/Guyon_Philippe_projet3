@@ -7,6 +7,7 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  background-color: #f6f6f6;
 }
 
 h1 {
@@ -327,23 +328,24 @@ a {
 .menu .menu_description .menu_icons:hover .fas {
   opacity: 1;
 }
-.menu .entree {
+.menu .food {
   display: flex;
   flex-direction: column;
   max-width: 100%;
   width: 100%;
+  margin-bottom: 10px;
 }
-.menu .entree h2 {
+.menu .food h2 {
   width: 100px;
   text-transform: uppercase;
   margin: 15px 0px 0px 0px;
 }
-.menu .entree .border {
+.menu .food .border {
   width: 50px;
   border: 2px solid #99e2d0;
   margin-bottom: 20px;
 }
-.menu .entree .entree_description {
+.menu .food .food_description {
   max-width: 100%;
   width: 100%;
   height: 65px;
@@ -361,66 +363,83 @@ a {
   cursor: pointer;
   /* slide */
 }
-.menu .entree .entree_description .text {
+.menu .food .food_description .text {
   margin: 15px;
   width: 75%;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
-.menu .entree .entree_description .text h3 {
+.menu .food .food_description .text h3 {
   margin: 0;
   font-size: 18px;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
-.menu .entree .entree_description .text p {
+.menu .food .food_description .text p {
   margin: 0;
   font-size: 14px;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
-.menu .entree .entree_description .price {
+.menu .food .food_description .price {
   height: 100%;
   margin-right: 10px;
 }
-.menu .entree .entree_description .price p {
+.menu .food .food_description .price p {
   font-size: 14px;
   margin-top: 34px;
   font-weight: bold;
 }
-.menu .entree .entree_description .hide {
+.menu .food .food_description .hide {
   width: 85px;
   background: #99e2d0;
   height: 100%;
   margin-right: -85px;
 }
-.menu .entree .entree_description .hide .hide_icon {
+.menu .food .food_description .hide .hide_icon {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.menu .entree .entree_description .hide i {
+.menu .food .food_description .hide i {
   margin-top: 17px;
   color: white;
 }
-.menu .entree .entree_description:hover > .hide {
+.menu .food .food_description:hover > .hide {
   animation: slide_in 400ms;
   margin-right: 0;
 }
-.menu .entree .entree_description:not(:hover) > .hide {
+.menu .food .food_description:not(:hover) > .hide {
   animation: slide_out 400ms;
 }
-.menu .entree .delay {
+.menu .food .delay {
   animation-delay: 800ms;
 }
-.menu .entree .delay_one {
+.menu .food .delay_one {
   animation-delay: 900ms;
 }
-.menu .entree .delay_two {
+.menu .food .delay_two {
   animation-delay: 1000ms;
+}
+.menu .food button {
+  margin: 25px auto 0px auto;
+  max-width: 250px;
+  width: 250px;
+  padding: 15px 25px;
+  border-radius: 20px;
+  color: white;
+  border: none;
+  background: linear-gradient(#ff79da, #9356dc);
+  cursor: pointer;
+  box-shadow: 0px 1px 5px #a8a7a7;
+}
+.menu .food button:hover {
+  filter: brightness(1.2);
+  box-shadow: 0px 1px 20px #646464;
+  transition-duration: 0.5s;
 }
 
 @keyframes slide_in {
@@ -450,6 +469,7 @@ a {
 /* mixins */
 header {
   border-bottom: 2px solid lightgray;
+  background-color: white;
   box-shadow: 0px 1px 5px #a8a7a7;
   padding: 5px 0;
 }
@@ -469,6 +489,7 @@ header img {
 footer {
   background-color: #353535;
   padding: 35px;
+  margin-bottom: 35px;
 }
 footer img {
   filter: invert(100%);
