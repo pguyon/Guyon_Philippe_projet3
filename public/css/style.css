@@ -33,6 +33,11 @@ a {
   text-decoration: none;
 }
 
+@media only screen and (min-width: 678px) {
+  .main_menu {
+    height: 750px;
+  }
+}
 .loading {
   position: fixed;
   height: 100%;
