@@ -23,10 +23,12 @@
 @mixin appear {
   @keyframes appear {
     0% {
-      transform: scale(0);
+      transform: translateY(-50px);
+      opacity: 0;
     }
     100% {
-      transform: scale(1);
+      transform: translateY(0px);
+      opacity: 1;
     }
   }
 }

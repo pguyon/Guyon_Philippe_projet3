@@ -118,6 +118,7 @@ a {
   background: linear-gradient(#ff79da, #9356dc);
   cursor: pointer;
   box-shadow: 0px 1px 5px #a8a7a7;
+  transition-duration: 0.5s;
 }
 .description button:hover {
   filter: brightness(1.2);
@@ -364,7 +365,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transform: scale(0);
+  opacity: 0;
   overflow: hidden;
   animation: appear 700ms;
   animation-fill-mode: both;
@@ -457,6 +458,7 @@ a {
   background: linear-gradient(#ff79da, #9356dc);
   cursor: pointer;
   box-shadow: 0px 1px 5px #a8a7a7;
+  transition-duration: 0.5s;
 }
 .menu button:hover {
   filter: brightness(1.2);
@@ -481,10 +483,12 @@ a {
 }
 @keyframes appear {
   0% {
-    transform: scale(0);
+    transform: translateY(-50px);
+    opacity: 0;
   }
   100% {
-    transform: scale(1);
+    transform: translateY(0px);
+    opacity: 1;
   }
 }
 @keyframes slide_in {

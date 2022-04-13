@@ -60,7 +60,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        transform: scale(0);
+        opacity: 0;
         overflow: hidden;
         animation: appear 700ms;
         animation-fill-mode: both;
