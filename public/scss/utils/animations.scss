@@ -1,4 +1,4 @@
-@mixin slide_in {
+slide_in {
   @keyframes slide_in {
     from {
       margin-right: -85px;
@@ -9,7 +9,7 @@
   }
 }
 
-@mixin slide_out {
+slide_out {
   @keyframes slide_out {
     from {
       margin-right: 0px;
@@ -20,7 +20,7 @@
   }
 }
 
-@mixin appear {
+appear {
   @keyframes appear {
     0% {
       transform: translateY(-50px);
@@ -33,7 +33,7 @@
   }
 }
 
-@mixin rotation_in {
+rotation_in {
   @keyframes rotation_in {
     from {
       transform: rotate(180deg);
@@ -44,7 +44,7 @@
   }
 }
 
-@mixin rotation_out {
+rotation_out {
   @keyframes rotation_out {
     from {
       transform: rotate(0deg);

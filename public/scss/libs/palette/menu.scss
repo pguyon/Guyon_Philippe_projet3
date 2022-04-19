@@ -12,7 +12,7 @@
     justify-content: space-between;
     h1 {
       margin: 0;
-      font-size: 28px;
+      font-size: 24px;
     }
     .menu_icons {
       width: 40px;
@@ -26,7 +26,7 @@
         right: 25px;
         top: 30px;
       }
-      // @include fa;
+      @include fa;
     }
   }
 
@@ -70,14 +70,17 @@
         .text {
           margin: 15px;
           width: 75%;
+          @include dots;
 
           h3 {
             margin: 0;
             font-size: 18px;
+            @include dots;
           }
           p {
             margin: 0;
             font-size: 14px;
+            @include dots;
           }
         }
 

@@ -7,9 +7,7 @@
     margin: 0 auto 0 auto;
     font-family: $text-style;
   }
-  button {
-    @include button;
-  }
+
   @media only screen and (min-width: 678px) {
     h1 {
       width: 100%;

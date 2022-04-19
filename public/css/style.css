@@ -1,6 +1,69 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 /* menu image */
+@keyframes slide_in {
+  from {
+    margin-right: -85px;
+  }
+  to {
+    margin-right: 0px;
+  }
+}
+
+@keyframes slide_out {
+  from {
+    margin-right: 0px;
+  }
+  to {
+    margin-right: -85px;
+  }
+}
+
+@keyframes appear {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes rotation_in {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes rotation_out {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+button {
+  padding: 15px 25px;
+  border-radius: 20px;
+  color: white;
+  border: none;
+  background: linear-gradient(#ff79da, #9356dc);
+  cursor: pointer;
+  box-shadow: 0px 1px 5px #a8a7a7;
+  transition-duration: 0.5s;
+}
+button:hover {
+  filter: brightness(1.2);
+  box-shadow: 0px 1px 20px #646464;
+  transition-duration: 0.5s;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -143,21 +206,6 @@ header img {
   width: 230px;
   margin: 0 auto 0 auto;
   font-family: "Roboto", sans-serif;
-}
-.description button {
-  padding: 15px 25px;
-  border-radius: 20px;
-  color: white;
-  border: none;
-  background: linear-gradient(#ff79da, #9356dc);
-  cursor: pointer;
-  box-shadow: 0px 1px 5px #a8a7a7;
-  transition-duration: 0.5s;
-}
-.description button:hover {
-  filter: brightness(1.2);
-  box-shadow: 0px 1px 20px #646464;
-  transition-duration: 0.5s;
 }
 @media only screen and (min-width: 678px) {
   .description h1 {
@@ -346,7 +394,7 @@ header img {
 }
 .menu .menu_description h1 {
   margin: 0;
-  font-size: 28px;
+  font-size: 24px;
 }
 .menu .menu_description .menu_icons {
   width: 40px;
@@ -492,19 +540,6 @@ header img {
   justify-content: center;
   margin: 65px auto 0px auto;
   width: 200px;
-  padding: 15px 25px;
-  border-radius: 20px;
-  color: white;
-  border: none;
-  background: linear-gradient(#ff79da, #9356dc);
-  cursor: pointer;
-  box-shadow: 0px 1px 5px #a8a7a7;
-  transition-duration: 0.5s;
-}
-.menu button:hover {
-  filter: brightness(1.2);
-  box-shadow: 0px 1px 20px #646464;
-  transition-duration: 0.5s;
 }
 
 @media only screen and (min-width: 678px) {
@@ -520,48 +555,6 @@ header img {
   .menu .all_food #first_enchante {
     position: relative;
     top: 40px;
-  }
-}
-@keyframes appear {
-  0% {
-    transform: translateY(-50px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0px);
-    opacity: 1;
-  }
-}
-@keyframes slide_in {
-  from {
-    margin-right: -85px;
-  }
-  to {
-    margin-right: 0px;
-  }
-}
-@keyframes slide_out {
-  from {
-    margin-right: 0px;
-  }
-  to {
-    margin-right: -85px;
-  }
-}
-@keyframes rotation_in {
-  from {
-    transform: rotate(180deg);
-  }
-  to {
-    transform: rotate(0deg);
-  }
-}
-@keyframes rotation_out {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(180deg);
   }
 }
 footer {
@@ -596,13 +589,12 @@ footer div .link i {
     margin-left: auto;
   }
   footer div {
-    width: 175px;
+    width: 195px;
     margin-right: auto;
     margin-left: auto;
   }
 }
 
-/* mixins */
 .menu_img {
   max-width: 100%;
   width: 100%;
