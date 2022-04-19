@@ -21,4 +21,8 @@
     color: black;
     font-family: $text-style;
   }
+  ::-moz-placeholder {
+    color: black;
+    opacity: 1;
+  }
 }

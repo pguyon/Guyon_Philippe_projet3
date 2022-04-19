@@ -111,6 +111,10 @@ a {
   color: black;
   font-family: "Roboto", sans-serif;
 }
+.location ::-moz-placeholder {
+  color: black;
+  opacity: 1;
+}
 
 .description {
   background-color: #f6f6f6;
