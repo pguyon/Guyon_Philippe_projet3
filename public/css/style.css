@@ -95,10 +95,21 @@ a {
   align-items: center;
 }
 .location i {
-  margin-right: 15px;
+  position: relative;
+  left: 35px;
 }
-.location span {
+.location input {
+  background-color: #eaeaea;
+  border: none;
+  text-align: center;
+}
+.location input[type=text] {
   font-weight: bold;
+  font-size: 14px;
+}
+.location ::placeholder {
+  color: black;
+  font-family: "Roboto", sans-serif;
 }
 
 .description {
@@ -188,6 +199,7 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    max-width: 1900px;
     width: 100%;
     padding: 0;
   }
@@ -272,6 +284,7 @@ a {
 
 @media only screen and (min-width: 678px) {
   .restaurant {
+    max-width: 1900px;
     align-items: center;
     padding: 15px 60px;
   }
