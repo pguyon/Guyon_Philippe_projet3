@@ -569,6 +569,7 @@ footer {
 footer img {
   filter: invert(100%);
   width: 100px;
+  margin-bottom: 15px;
 }
 footer div {
   margin-top: 10px;
@@ -582,6 +583,21 @@ footer div .link a:hover {
 footer div .link i {
   color: white;
   margin-right: 10px;
+}
+@media only screen and (min-width: 678px) {
+  footer footer {
+    max-width: 1900px;
+  }
+  footer img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  footer div {
+    width: 175px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .menu_img {
