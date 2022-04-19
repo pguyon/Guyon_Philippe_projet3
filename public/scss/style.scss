@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-@import "libs/variables.scss";
-@import "libs/mixin/mixins.scss";
-@import "libs/mixin/animations.scss";
+@import "utils/variables.scss";
+@import "utils/mixins.scss";
+@import "utils/animations.scss";
 @import "libs/body.scss";
 @import "layouts/header.scss";
 @import "libs/index/loading.scss";
