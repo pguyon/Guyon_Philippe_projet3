@@ -26,7 +26,7 @@
         right: 25px;
         top: 30px;
       }
-      @include fa;
+      // @include fa;
     }
   }
 
@@ -70,17 +70,14 @@
         .text {
           margin: 15px;
           width: 75%;
-          @include dots;
 
           h3 {
             margin: 0;
             font-size: 18px;
-            @include dots;
           }
           p {
             margin: 0;
             font-size: 14px;
-            @include dots;
           }
         }
 
@@ -153,7 +150,6 @@
     justify-content: center;
     margin: 65px auto 0px auto;
     width: 200px;
-    @include button;
   }
 }
 
@@ -174,9 +170,3 @@
     }
   }
 }
-
-@include appear;
-@include slide_in;
-@include slide_out;
-@include rotation_in;
-@include rotation_out;
