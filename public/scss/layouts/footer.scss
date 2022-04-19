@@ -1,35 +1,43 @@
 footer {
   background-color: #353535;
   padding: 35px;
+
   img {
     filter: invert(100%);
     width: 100px;
     margin-bottom: 15px;
   }
+
   div {
     margin-top: 10px;
+
     .link {
       a {
         color: white;
+
         &:hover {
           color: $tertiary;
         }
       }
+
       i {
         color: white;
         margin-right: 10px;
       }
     }
   }
+
   @media only screen and (min-width: 678px) {
     footer {
       max-width: 1900px;
     }
+
     img {
       display: block;
       margin-right: auto;
       margin-left: auto;
     }
+
     div {
       width: 195px;
       margin-right: auto;

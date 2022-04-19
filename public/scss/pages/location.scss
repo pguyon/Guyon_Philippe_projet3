@@ -4,23 +4,28 @@
   background-color: #eaeaea;
   justify-content: center;
   align-items: center;
+
   i {
     position: relative;
     left: 35px;
   }
+
   input {
     background-color: #eaeaea;
     border: none;
     text-align: center;
   }
+
   input[type="text"] {
     font-weight: bold;
     font-size: 14px;
   }
+
   ::placeholder {
     color: black;
     font-family: $text-style;
   }
+
   ::-moz-placeholder {
     color: black;
     opacity: 1;
