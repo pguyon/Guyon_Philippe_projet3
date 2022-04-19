@@ -602,4 +602,8 @@ footer div .link i {
   object-fit: cover;
 }
 
+.enchante__img {
+  max-height: 250px;
+}
+
 /*# sourceMappingURL=style.css.map */
