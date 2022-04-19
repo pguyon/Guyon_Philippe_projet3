@@ -27,6 +27,11 @@
   .enchante__img {
     max-height: 250px;
   }
+  @media only screen and(min-width: 678px) {
+    .enchante__img {
+      max-height: 350px;
+    }
+  }
 }
 
 @mixin fa {

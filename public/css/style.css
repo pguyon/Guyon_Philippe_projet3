@@ -606,4 +606,10 @@ footer div .link i {
   max-height: 250px;
 }
 
+@media only screen and (min-width: 678px) {
+  .enchante__img {
+    max-height: 350px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
