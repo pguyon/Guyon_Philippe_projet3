@@ -15,7 +15,8 @@ h4,
 h5,
 h6,
 p,
-span {
+span,
+a {
   font-family: $text-style;
 }
 
@@ -27,8 +28,8 @@ a {
   text-decoration: none;
 }
 
-@media only screen and (min-width: 678px){
+@media only screen and (min-width: 678px) {
   .main_menu {
-    height: 750px;    
+    height: 750px;
   }
 }
