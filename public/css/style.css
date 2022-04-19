@@ -106,9 +106,10 @@ a {
   text-align: center;
   padding: 30px;
 }
-.description h2 {
-  max-width: 200px;
+.description h1 {
+  width: 230px;
   margin: 0 auto 0 auto;
+  font-family: "Roboto", sans-serif;
 }
 .description button {
   padding: 15px 25px;
@@ -124,6 +125,11 @@ a {
   filter: brightness(1.2);
   box-shadow: 0px 1px 20px #646464;
   transition-duration: 0.5s;
+}
+@media only screen and (min-width: 678px) {
+  .description h1 {
+    width: 100%;
+  }
 }
 
 .fonctionnement {
