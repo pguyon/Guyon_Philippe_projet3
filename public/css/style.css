@@ -224,12 +224,12 @@ header img {
   padding: 35px 15px;
   margin: 0;
 }
-.fonctionnement .container {
+.fonctionnement__container {
   padding: 0px 25px;
   display: flex;
   flex-direction: column;
 }
-.fonctionnement .container div {
+.fonctionnement__container__description {
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
@@ -240,11 +240,11 @@ header img {
   max-width: 628px;
   box-shadow: 0px 1px 5px #a8a7a7;
 }
-.fonctionnement .container div i {
+.fonctionnement__container__description i {
   margin: 0px 20px 0 10px;
   color: #7e7e7e;
 }
-.fonctionnement .container div span {
+.fonctionnement__container__description span {
   padding: 4px;
   border-radius: 50%;
   position: relative;
@@ -256,18 +256,18 @@ header img {
   text-align: center;
   font-size: 14px;
 }
-.fonctionnement .container :nth-of-type(3) {
+.fonctionnement__container :nth-of-type(3) {
   background-color: #f5edff;
 }
-.fonctionnement .container :nth-of-type(3) i {
+.fonctionnement__container :nth-of-type(3) i {
   color: #9356dc;
 }
 @media only screen and (min-width: 678px) {
-  .fonctionnement {
+  .fonctionnement .fonctionnement {
     width: 90%;
     margin: 0px auto 25px auto;
   }
-  .fonctionnement .container {
+  .fonctionnement .fonctionnement__container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -275,7 +275,7 @@ header img {
     width: 100%;
     padding: 0;
   }
-  .fonctionnement .container div {
+  .fonctionnement .fonctionnement__container__description {
     width: 30%;
   }
 }
