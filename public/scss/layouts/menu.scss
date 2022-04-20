@@ -6,145 +6,158 @@
   top: -60px;
   padding: 25px;
 
-  .menu_description {
+  &__description {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     h1 {
       margin: 0;
       font-size: 24px;
     }
-    .menu_icons {
-      width: 40px;
-      height: 40px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      cursor: pointer;
-      i {
-        position: absolute;
-        right: 25px;
-        top: 30px;
-      }
-      @include fa;
-    }
   }
 
-  .all_food {
+  &__icons {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    i {
+      position: absolute;
+      right: 25px;
+      top: 30px;
+    }
+
+    @include fa;
+  }
+}
+
+.all_food {
+  display: flex;
+  flex-direction: column;
+
+  .food {
     display: flex;
     flex-direction: column;
-    .food {
-      display: flex;
-      flex-direction: column;
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 10px;
+
+    h2 {
+      width: 100px;
+      text-transform: uppercase;
+      margin: 15px 0px 0px 0px;
+    }
+
+    .border {
+      width: 50px;
+      border: 2px solid $tertiary;
+      margin-bottom: 20px;
+    }
+
+    .food_description {
       max-width: 100%;
       width: 100%;
-      margin-bottom: 10px;
-      h2 {
-        width: 100px;
-        text-transform: uppercase;
-        margin: 15px 0px 0px 0px;
-      }
-      .border {
-        width: 50px;
-        border: 2px solid $tertiary;
-        margin-bottom: 20px;
-      }
+      height: 65px;
+      background-color: white;
+      border-radius: 15px;
+      @include shadow;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      opacity: 0;
+      overflow: hidden;
+      animation: appear 700ms;
+      animation-fill-mode: both;
+      margin: 0px auto 10px auto;
+      cursor: pointer;
 
-      .food_description {
-        max-width: 100%;
-        width: 100%;
-        height: 65px;
-        background-color: white;
-        border-radius: 15px;
-        @include shadow;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        opacity: 0;
-        overflow: hidden;
-        animation: appear 700ms;
-        animation-fill-mode: both;
-        margin: 0px auto 10px auto;
-        cursor: pointer;
+      .text {
+        margin: 15px;
+        width: 75%;
+        @include dots;
 
-        .text {
-          margin: 15px;
-          width: 75%;
+        h3 {
+          margin: 0;
+          font-size: 18px;
           @include dots;
-
-          h3 {
-            margin: 0;
-            font-size: 18px;
-            @include dots;
-          }
-          p {
-            margin: 0;
-            font-size: 14px;
-            @include dots;
-          }
         }
 
-        .price {
-          height: 100%;
-          margin-right: 10px;
-          p {
-            font-size: 14px;
-            margin-top: 34px;
-            font-weight: bold;
-          }
-        }
-
-        .hide {
-          width: 85px;
-          background: $tertiary;
-          height: 100%;
-          margin-right: -85px;
-          .hide_icon {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-          }
-          i {
-            margin-top: 17px;
-            color: white;
-            transform: rotate(180deg);
-          }
-        }
-
-        /* slide */
-        &:hover > .hide {
-          animation: slide_in 400ms;
-          margin-right: 0;
-        }
-        &:not(:hover) > .hide {
-          animation: slide_out 400ms;
-        }
-
-        /* rotate */
-        &:hover > .hide i {
-          animation: rotation_in 400ms;
-          transform: rotate(0deg);
-        }
-
-        &:not(:hover) > .hide i {
-          animation: rotation_out 400ms;
+        p {
+          margin: 0;
+          font-size: 14px;
+          @include dots;
         }
       }
 
-      .delay {
-        animation-delay: 800ms;
+      .price {
+        height: 100%;
+        margin-right: 10px;
+
+        p {
+          font-size: 14px;
+          margin-top: 34px;
+          font-weight: bold;
+        }
       }
 
-      .delay_one {
-        animation-delay: 900ms;
+      .hide {
+        width: 85px;
+        background: $tertiary;
+        height: 100%;
+        margin-right: -85px;
+
+        .hide_icon {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        i {
+          margin-top: 17px;
+          color: white;
+          transform: rotate(180deg);
+        }
       }
 
-      .delay_two {
-        animation-delay: 1000ms;
+      /* slide */
+      &:hover > .hide {
+        animation: slide_in 400ms;
+        margin-right: 0;
       }
-      .delay_three {
-        animation-delay: 1100ms;
+
+      &:not(:hover) > .hide {
+        animation: slide_out 400ms;
       }
+
+      /* rotate */
+      &:hover > .hide i {
+        animation: rotation_in 400ms;
+        transform: rotate(0deg);
+      }
+
+      &:not(:hover) > .hide i {
+        animation: rotation_out 400ms;
+      }
+    }
+
+    .delay {
+      animation-delay: 800ms;
+    }
+
+    .delay_one {
+      animation-delay: 900ms;
+    }
+
+    .delay_two {
+      animation-delay: 1000ms;
+    }
+
+    .delay_three {
+      animation-delay: 1100ms;
     }
   }
 
@@ -163,9 +176,11 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
+
       .food {
         width: 30%;
       }
+
       #first_enchante {
         position: relative;
         top: 40px;

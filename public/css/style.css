@@ -389,16 +389,16 @@ header img {
   top: -60px;
   padding: 25px;
 }
-.menu .menu_description {
+.menu__description {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.menu .menu_description h1 {
+.menu__description h1 {
   margin: 0;
   font-size: 24px;
 }
-.menu .menu_description .menu_icons {
+.menu__icons {
   width: 40px;
   height: 40px;
   display: flex;
@@ -406,15 +406,15 @@ header img {
   align-items: center;
   cursor: pointer;
 }
-.menu .menu_description .menu_icons i {
+.menu__icons i {
   position: absolute;
   right: 25px;
   top: 30px;
 }
-.menu .menu_description .menu_icons .far {
+.menu__icons .far {
   color: black;
 }
-.menu .menu_description .menu_icons .fas {
+.menu__icons .fas {
   color: transparent;
   background-image: linear-gradient(to right, #9356dc, #ff79da);
   background-clip: text;
@@ -422,31 +422,32 @@ header img {
   opacity: 0;
   transition: all 300ms;
 }
-.menu .menu_description .menu_icons:hover .fas {
+.menu__icons:hover .fas {
   opacity: 1;
 }
-.menu .all_food {
+
+.all_food {
   display: flex;
   flex-direction: column;
 }
-.menu .all_food .food {
+.all_food .food {
   display: flex;
   flex-direction: column;
   max-width: 100%;
   width: 100%;
   margin-bottom: 10px;
 }
-.menu .all_food .food h2 {
+.all_food .food h2 {
   width: 100px;
   text-transform: uppercase;
   margin: 15px 0px 0px 0px;
 }
-.menu .all_food .food .border {
+.all_food .food .border {
   width: 50px;
   border: 2px solid #99e2d0;
   margin-bottom: 20px;
 }
-.menu .all_food .food .food_description {
+.all_food .food .food_description {
   max-width: 100%;
   width: 100%;
   height: 65px;
@@ -465,79 +466,79 @@ header img {
   /* slide */
   /* rotate */
 }
-.menu .all_food .food .food_description .text {
+.all_food .food .food_description .text {
   margin: 15px;
   width: 75%;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
-.menu .all_food .food .food_description .text h3 {
+.all_food .food .food_description .text h3 {
   margin: 0;
   font-size: 18px;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
-.menu .all_food .food .food_description .text p {
+.all_food .food .food_description .text p {
   margin: 0;
   font-size: 14px;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
-.menu .all_food .food .food_description .price {
+.all_food .food .food_description .price {
   height: 100%;
   margin-right: 10px;
 }
-.menu .all_food .food .food_description .price p {
+.all_food .food .food_description .price p {
   font-size: 14px;
   margin-top: 34px;
   font-weight: bold;
 }
-.menu .all_food .food .food_description .hide {
+.all_food .food .food_description .hide {
   width: 85px;
   background: #99e2d0;
   height: 100%;
   margin-right: -85px;
 }
-.menu .all_food .food .food_description .hide .hide_icon {
+.all_food .food .food_description .hide .hide_icon {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.menu .all_food .food .food_description .hide i {
+.all_food .food .food_description .hide i {
   margin-top: 17px;
   color: white;
   transform: rotate(180deg);
 }
-.menu .all_food .food .food_description:hover > .hide {
+.all_food .food .food_description:hover > .hide {
   animation: slide_in 400ms;
   margin-right: 0;
 }
-.menu .all_food .food .food_description:not(:hover) > .hide {
+.all_food .food .food_description:not(:hover) > .hide {
   animation: slide_out 400ms;
 }
-.menu .all_food .food .food_description:hover > .hide i {
+.all_food .food .food_description:hover > .hide i {
   animation: rotation_in 400ms;
   transform: rotate(0deg);
 }
-.menu .all_food .food .food_description:not(:hover) > .hide i {
+.all_food .food .food_description:not(:hover) > .hide i {
   animation: rotation_out 400ms;
 }
-.menu .all_food .food .delay {
+.all_food .food .delay {
   animation-delay: 800ms;
 }
-.menu .all_food .food .delay_one {
+.all_food .food .delay_one {
   animation-delay: 900ms;
 }
-.menu .all_food .food .delay_two {
+.all_food .food .delay_two {
   animation-delay: 1000ms;
 }
-.menu .all_food .food .delay_three {
+.all_food .food .delay_three {
   animation-delay: 1100ms;
 }
-.menu button {
+.all_food button {
   display: flex;
   justify-content: center;
   margin: 65px auto 0px auto;
