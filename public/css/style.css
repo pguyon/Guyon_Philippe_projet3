@@ -389,6 +389,12 @@ header img {
   top: -60px;
   padding: 25px;
 }
+.menu button {
+  display: flex;
+  justify-content: center;
+  margin: 65px auto 0px auto;
+  width: 200px;
+}
 .menu__description {
   display: flex;
   align-items: center;
@@ -537,12 +543,6 @@ header img {
 }
 .all_food .food .delay_three {
   animation-delay: 1100ms;
-}
-.all_food button {
-  display: flex;
-  justify-content: center;
-  margin: 65px auto 0px auto;
-  width: 200px;
 }
 
 @media only screen and (min-width: 678px) {

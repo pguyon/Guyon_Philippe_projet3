@@ -6,6 +6,13 @@
   top: -60px;
   padding: 25px;
 
+  button {
+    display: flex;
+    justify-content: center;
+    margin: 65px auto 0px auto;
+    width: 200px;
+  }
+
   &__description {
     display: flex;
     align-items: center;
@@ -159,13 +166,6 @@
     .delay_three {
       animation-delay: 1100ms;
     }
-  }
-
-  button {
-    display: flex;
-    justify-content: center;
-    margin: 65px auto 0px auto;
-    width: 200px;
   }
 }
 
