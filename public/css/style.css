@@ -287,7 +287,7 @@ header img {
   display: flex;
   flex-direction: column;
 }
-.restaurant .cards {
+.restaurant__cards {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -299,16 +299,16 @@ header img {
   overflow: hidden;
   box-shadow: 0px 1px 5px #a8a7a7;
 }
-.restaurant .cards .image {
+.restaurant__image {
   width: 100%;
   height: 70%;
 }
-.restaurant .cards .image img {
+.restaurant__image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.restaurant .cards .image span {
+.restaurant__image span {
   position: absolute;
   background-color: #99e2d0;
   color: #008766;
@@ -318,31 +318,31 @@ header img {
   right: 10px;
   padding: 10px;
 }
-.restaurant .cards .description {
+.restaurant__description {
   background-color: white;
   height: 30%;
   padding: 10px;
   display: flex;
   align-items: center;
 }
-.restaurant .cards .description h3 {
+.restaurant__description h3 {
   margin: 0 0 3px 0;
   color: black;
 }
-.restaurant .cards .description p {
+.restaurant__description p {
   margin: 0;
   color: black;
   float: left;
 }
-.restaurant .cards .description .description_icons i {
+.restaurant__icons i {
   position: absolute;
   right: 20px;
   bottom: 30px;
 }
-.restaurant .cards .description .description_icons .far {
+.restaurant__icons .far {
   color: black;
 }
-.restaurant .cards .description .description_icons .fas {
+.restaurant__icons .fas {
   color: transparent;
   background-image: linear-gradient(to right, #9356dc, #ff79da);
   background-clip: text;
@@ -350,7 +350,7 @@ header img {
   opacity: 0;
   transition: all 300ms;
 }
-.restaurant .cards .description .description_icons:hover .fas {
+.restaurant__icons:hover .fas {
   opacity: 1;
 }
 
@@ -364,20 +364,20 @@ header img {
     position: relative;
     right: 43%;
   }
-  .restaurant .allcards {
+  .restaurant__allcards {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
   }
-  .restaurant .allcards a {
+  .restaurant__allcards a {
     width: 50%;
   }
-  .restaurant .allcards a .image {
+  .restaurant__image {
     width: 100%;
   }
-  .restaurant .allcards a .image img {
+  .restaurant__image img {
     width: 100%;
   }
 }
