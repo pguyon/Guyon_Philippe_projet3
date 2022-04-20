@@ -1,4 +1,4 @@
-footer {
+.footer {
   background-color: #353535;
   padding: 35px;
 
@@ -8,27 +8,27 @@ footer {
     margin-bottom: 15px;
   }
 
-  div {
+  &__container {
     margin-top: 10px;
+  }
 
-    .link {
-      a {
-        color: white;
+  &__link {
+    a {
+      color: white;
 
-        &:hover {
-          color: $tertiary;
-        }
+      &:hover {
+        color: $tertiary;
       }
+    }
 
-      i {
-        color: white;
-        margin-right: 10px;
-      }
+    i {
+      color: white;
+      margin-right: 10px;
     }
   }
 
   @media only screen and (min-width: 678px) {
-    footer {
+    .footer {
       max-width: 1900px;
     }
 
@@ -38,7 +38,7 @@ footer {
       margin-left: auto;
     }
 
-    div {
+    &__container {
       width: 195px;
       margin-right: auto;
       margin-left: auto;
