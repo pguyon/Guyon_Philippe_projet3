@@ -171,6 +171,11 @@
 
 @media only screen and (min-width: 678px) {
   .menu {
+    max-width: 1900px;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+
     .all_food {
       display: flex;
       flex-direction: row;

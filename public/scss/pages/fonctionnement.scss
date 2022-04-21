@@ -53,7 +53,8 @@
   }
 
   @media only screen and (min-width: 678px) {
-    width: 90%;
+    max-width: 1900px;
+    width: 70%;
     margin: 0px auto 25px auto;
 
     &__container {
