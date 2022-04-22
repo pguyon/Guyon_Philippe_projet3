@@ -21,16 +21,11 @@
   .menu_img {
     max-width: 100%;
     width: 100%;
-    max-height: 350px;
+    height: 30vh;
     object-fit: cover;
   }
   .enchante__img {
     max-height: 250px;
-  }
-  @media only screen and(min-width: 678px) {
-    .enchante__img {
-      max-height: 350px;
-    }
   }
 }
 

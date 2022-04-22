@@ -265,7 +265,7 @@ header img {
 @media only screen and (min-width: 678px) {
   .fonctionnement {
     max-width: 1900px;
-    width: 70%;
+    width: 90%;
     margin: 0px auto 25px auto;
   }
   .fonctionnement__container {
@@ -556,16 +556,11 @@ header img {
     width: 70%;
     margin-right: auto;
     margin-left: auto;
-    height: 700px;
   }
   .menu .all_food {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-  }
-  .menu .all_food .food {
-    width: 30%;
   }
   .menu .all_food #first_enchante {
     position: relative;
@@ -613,18 +608,12 @@ header img {
 .menu_img {
   max-width: 100%;
   width: 100%;
-  max-height: 350px;
+  height: 30vh;
   object-fit: cover;
 }
 
 .enchante__img {
   max-height: 250px;
-}
-
-@media only screen and (min-width: 678px) {
-  .enchante__img {
-    max-height: 350px;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

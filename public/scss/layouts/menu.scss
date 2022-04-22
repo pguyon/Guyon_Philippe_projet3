@@ -175,17 +175,11 @@
     width: 70%;
     margin-right: auto;
     margin-left: auto;
-    height: 700px;
 
     .all_food {
       display: flex;
-      flex-direction: row;
       justify-content: space-between;
       align-items: center;
-
-      .food {
-        width: 30%;
-      }
 
       #first_enchante {
         position: relative;
