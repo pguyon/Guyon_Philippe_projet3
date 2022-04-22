@@ -281,9 +281,12 @@ header img {
     width: 50%;
   }
 }
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1200px) {
   .fonctionnement {
     max-width: 1900px;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
   }
   .fonctionnement h2 {
     align-self: flex-start;
@@ -378,6 +381,33 @@ header img {
     max-width: 1900px;
     align-items: center;
     padding: 15px;
+  }
+  .restaurant h2 {
+    align-self: flex-start;
+  }
+  .restaurant__allcards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .restaurant__allcards a {
+    width: 50%;
+  }
+  .restaurant__image {
+    width: 100%;
+  }
+  .restaurant__image img {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .restaurant {
+    max-width: 1900px;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
   }
   .restaurant h2 {
     align-self: flex-start;

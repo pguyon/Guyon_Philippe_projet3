@@ -99,3 +99,36 @@
     }
   }
 }
+
+@media only screen and (min-width: 1200px) {
+  .restaurant {
+    max-width: 1900px;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+
+    h2 {
+      align-self: flex-start;
+    }
+
+    &__allcards {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 100%;
+
+      a {
+        width: 50%;
+      }
+    }
+
+    &__image {
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
