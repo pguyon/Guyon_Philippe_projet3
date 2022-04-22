@@ -581,6 +581,19 @@ header img {
     top: 40px;
   }
 }
+@media only screen and (min-width: 1000px) {
+  .menu {
+    max-width: 1900px;
+    width: 90%;
+  }
+  .menu .all_food {
+    display: flex;
+    flex-direction: row;
+  }
+  .menu .food {
+    width: 32%;
+  }
+}
 .footer {
   background-color: #353535;
   padding: 35px;

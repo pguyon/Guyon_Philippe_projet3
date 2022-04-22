@@ -188,3 +188,17 @@
     }
   }
 }
+
+@media only screen and (min-width: 1000px) {
+  .menu {
+    max-width: 1900px;
+    width: 90%;
+    .all_food {
+      display: flex;
+      flex-direction: row;
+    }
+    .food {
+      width: 32%;
+    }
+  }
+}
