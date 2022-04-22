@@ -268,13 +268,14 @@ header img {
     padding: 0px 15px;
   }
   .fonctionnement h2 {
-    padding: 35px 3px;
+    padding: 25px 0px;
   }
   .fonctionnement__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 1900px;
+    padding: 0px;
   }
   .fonctionnement__description {
     width: 50%;
@@ -292,7 +293,7 @@ header img {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    max-width: 1900px;
+    padding: 0px;
   }
   .fonctionnement__description {
     width: 30%;
