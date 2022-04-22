@@ -60,7 +60,7 @@
 @keyframes load {
   100% {
     opacity: 0;
-    z-index: -10;
+    z-index: -50;
   }
 }
 
@@ -157,7 +157,7 @@ header img {
   border-radius: 50%;
   border-top: 5px solid #99e2d0;
   border-bottom: 5px solid #ff79da;
-  animation: spinner 3000ms linear infinite, load 3000ms;
+  animation: spinner 3000ms linear, load 3000ms;
 }
 .loading__two {
   width: 85px;
@@ -167,7 +167,7 @@ header img {
   margin: 3px auto;
   border-left: 5px solid #9356dc;
   border-right: 5px solid #9356dc;
-  animation: spinner 3000ms linear infinite, load 3000ms;
+  animation: spinner 3000ms linear, load 3000ms;
 }
 
 .location {
