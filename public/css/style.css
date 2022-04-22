@@ -359,6 +359,7 @@ header img {
   .restaurant {
     max-width: 1900px;
     width: 75%;
+    height: 632px;
     margin-right: auto;
     margin-left: auto;
     align-items: center;
@@ -555,6 +556,7 @@ header img {
     width: 70%;
     margin-right: auto;
     margin-left: auto;
+    height: 700px;
   }
   .menu .all_food {
     display: flex;
