@@ -265,16 +265,34 @@ header img {
 @media only screen and (min-width: 678px) {
   .fonctionnement {
     max-width: 1900px;
-    width: 90%;
-    margin: 0px auto 25px auto;
+    padding: 0px 15px;
+  }
+  .fonctionnement h2 {
+    padding: 35px 3px;
+  }
+  .fonctionnement__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1900px;
+  }
+  .fonctionnement__description {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .fonctionnement {
+    max-width: 1900px;
+    padding: 0px 25px;
+  }
+  .fonctionnement h2 {
+    padding: 15px 0px;
   }
   .fonctionnement__container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     max-width: 1900px;
-    width: 100%;
-    padding: 0;
   }
   .fonctionnement__description {
     width: 30%;
@@ -358,12 +376,8 @@ header img {
 @media only screen and (min-width: 678px) {
   .restaurant {
     max-width: 1900px;
-    width: 75%;
-    height: 632px;
-    margin-right: auto;
-    margin-left: auto;
     align-items: center;
-    padding: 15px 60px;
+    padding: 15px;
   }
   .restaurant h2 {
     position: relative;
