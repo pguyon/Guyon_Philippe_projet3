@@ -1,5 +1,4 @@
-header {
-  max-width: 1900px;
+header {  
   border-bottom: 2px solid lightgray;
   background-color: white;
   @include shadow;
@@ -18,4 +17,5 @@ header {
     left: 50%;
     transform: translateX(-50%);
   }
+ 
 }
