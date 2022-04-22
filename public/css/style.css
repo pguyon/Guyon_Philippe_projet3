@@ -284,10 +284,9 @@ header img {
 @media only screen and (min-width: 1000px) {
   .fonctionnement {
     max-width: 1900px;
-    padding: 0px 25px;
   }
   .fonctionnement h2 {
-    padding: 15px 0px;
+    align-self: flex-start;
   }
   .fonctionnement__container {
     display: flex;
@@ -381,8 +380,7 @@ header img {
     padding: 15px;
   }
   .restaurant h2 {
-    position: relative;
-    right: 43%;
+    align-self: flex-start;
   }
   .restaurant__allcards {
     display: flex;
