@@ -8,8 +8,7 @@
     font-family: $text-style;
   }
 
-  @media only screen and (min-width: 678px) {
-   
+  @include responsive-sm {
     h1 {
       width: 100%;
     }

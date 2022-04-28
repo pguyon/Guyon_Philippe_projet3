@@ -68,7 +68,8 @@
   }
 }
 
-@media only screen and (min-width: 678px) {
+/*Responsive */
+@include responsive-sm {
   .restaurant {
     max-width: 1900px;
     align-items: center;
@@ -100,7 +101,7 @@
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@include responsive-lg {
   .restaurant {
     max-width: 1900px;
     width: 80%;

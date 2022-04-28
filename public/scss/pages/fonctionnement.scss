@@ -51,8 +51,8 @@
       color: $primary;
     }
   }
-
-  @media only screen and (min-width: 678px) {
+  /* responsive */
+  @include responsive-sm {
     max-width: 1900px;
     padding: 0px 15px;
 
@@ -72,7 +72,7 @@
       width: 50%;
     }
   }
-  @media only screen and (min-width: 1200px) {
+  @include responsive-lg {
     max-width: 1900px;
     width: 80%;
     margin-right: auto;

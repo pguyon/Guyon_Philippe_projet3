@@ -51,3 +51,19 @@
   overflow: hidden;
   white-space: nowrap;
 }
+
+@mixin responsive-sm {
+  @media only screen and(min-width: $responsive-sm) {
+    @content;
+  }
+}
+@mixin responsive-md {
+  @media only screen and(min-width: $responsive-md) {
+    @content;
+  }
+}
+@mixin responsive-lg {
+  @media only screen and(min-width: $responsive-lg) {
+    @content;
+  }
+}
